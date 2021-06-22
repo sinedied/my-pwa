@@ -4,6 +4,8 @@ import { SwUpdate } from '@angular/service-worker';
 @Component({
   selector: 'app-root',
   template: `
+  <h1>New version!</h1> 
+  
   Message: {{ hello }}
 
   <p *ngIf="updateAvailable$ | async; else noUpdate">
